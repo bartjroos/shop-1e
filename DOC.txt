@@ -1,0 +1,9 @@
+php artisan serve
+Map: database/migrations
+php artisan make:migration create_products_table
+php artisan migrate
+DB-naam in .env
+Let op: artisan-commando's in je hoodmap uitvoeren!
+Route::resource('producten', 'ProductController');
+php artisan make:controller ProductController -r
+php artisan make:model Product
