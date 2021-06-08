@@ -1,3 +1,3 @@
 Installeer door:
 
-composer install
+`composer install`
