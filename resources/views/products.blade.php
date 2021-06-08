@@ -9,11 +9,15 @@
 </head>
 <body>
     
-    <h1>Producten</h1>
+    <div class="wrapper">
+        <h1>Producten</h1>
 
-    <?php foreach($producten as $product): ?>
-        <li><?php echo $product['name']; ?></li>
-    <?php endforeach; ?>
+        <div class="products">
+            <?php foreach($producten as $product): ?>
+                <div class="product"><?php echo $product['name']; ?></div>
+            <?php endforeach; ?>
+        </div>
+    </div>
 
 </body>
 </html>
