@@ -17,6 +17,7 @@
                 <div class="product">
                     <h2><?php echo $product['name']; ?></h2>
                     <p>Prijs: &euro;<?php echo $product['price']; ?></p>
+                    <a href="/buy/<?php echo $product['id']; ?>">Kopen</a>
                 </div>
             <?php endforeach; ?>
         </div>

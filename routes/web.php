@@ -14,9 +14,11 @@ use Illuminate\Support\Facades\Route;
 */
 
 use App\Http\Controllers\ProductController;
+use App\Http\Controllers\OrderController;
 
 Route::get('/welcome', function () {
     return view('welcome');
 });
 
 Route::resource('producten', ProductController::class);
+Route::get('/buy/{product}', [OrderController::class, 'buy']);
